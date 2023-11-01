@@ -215,6 +215,10 @@ console.log(numArr2);
 const numArr3 = ["batman", "spiderman", "ironman"]
 console.log(numArr3.slice(1));
 
+const arr = [23,45,67,89,20];
+console.log(arr.sort());
+console.log(arr.reverse());
+
 
 
 

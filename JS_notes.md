@@ -12,7 +12,7 @@ note:
 4. console.log() : display in console
 5. window.print() : print the entire webpage
 
-## variable declaration in js (4 ways):
+## variable declaration in JS (4 ways):
 1. automatically(like x = 9)
 2. let (block scope)
 3. const (block scope)
@@ -193,6 +193,13 @@ numArr2.splice(0,1)
 
 11. i) arr.slice(2) : remove element at 2nd index
     ii) arr.slice(1,3) : remove element from "0" to "3-1" index
+
+NOTE : sorting in case of stringified arrays gives wrong results like "2" can come before "1" 
+- to avoid this use the following function
+```
+ points.sort(function(a, b){return a - b})
+```
+ 
 
 
 
