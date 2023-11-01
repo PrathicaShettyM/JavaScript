@@ -29,6 +29,9 @@ const y = volvo + 16 + 4 = volvo64
 * js datatypes are `dynamic`: same variable can store both numbers, decimal and strings
 
 ## JS Objects
+
+* NOTE: to check if the object exists then give condition : `if(x == "undefined")`
+
 1. accessing objects in webpage (2 ways)
 * object.key
 * object["key"]
@@ -83,6 +86,9 @@ string = "This is a string and a substring"
 9. str9.split(" | ") : converts it into new array once it sees the separator mentioned in the braket appears
 
 ##### String search methods
+
+* NOTE: `string-string!=error` but `NaN` 
+
 1. str.indexOf("string") : give index of 1st occurence of string
 * cant take powerful search values(regex) 
 
@@ -125,6 +131,34 @@ note :
 
 `Number Methods`
 * console.log(Number.isInteger(10.5)) : check if it integer
+
+1. num.toString() : converts number to string
+
+2. num.toExponential(power) : same as number raised to the power 
+
+3. num.toFixed(2) : decimal num upto 2 decimal places(type is string)
+
+4. num.toPrecision(3) : round off to 3 decimal places(like 134.8 ~ 135)
+
+5.  Number(true) : 1  
+    Number("23") : 23
+    => this method convert variable to number
+
+// Parse : divide sentence into parts and identify relation btw them
+
+6. parseInt(" 12 38993") : 12 => parses string and returns whole no. Space is not counted. only 1st no. returned
+* parseFloat(" 12.33 ") : is also similar
+
+### Arrays methods
+
+1. `array.length `= to find array length(but dont use this in loop bwcoz it will affect js performance)
+2. `array.sort()`: sort the array elements
+ 
+-  HOW TO check if the given object is array or not? use the methods
+1. Array.isArray(`arrayname`)
+2. `arrayname` instanceof Array 
+
+
 
 
 

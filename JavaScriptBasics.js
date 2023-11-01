@@ -131,8 +131,53 @@ let container = `<h2>${content}</h2>`;
 
 
 console.log("Numbers in js: ");
-console.log(Number.isInteger(10.5))
-;
+console.log(Number.isInteger(10.5));
+
+//Number methods
+console.log("\nBelow are number methods : \n");
+let num1 = 123
+let num2 = 12
+let num3 = 123.7896
+let num4 = 123
+let num5 = 123
+let num6 = 123 
+
+let nres1 = num1.toString()
+console.log(nres1);
+console.log(typeof nres1);
+console.log((1236).toString());
+
+console.log(num2.toExponential(2));
+
+console.log(num3.toPrecision(3));
+
+console.log(num3.valueOf());
+
+console.log(Number(true));
+console.log(Number("23"));
+
+console.log(parseInt(" 102 3")); 
+
+// JavaScript arrays
+const charr = ["Volvo", "BMW", "Mercedez"] 
+charr[0] = "Ferrari";
+console.log(charr);
+
+// array methods
+let clen = charr.length;
+let csort = charr.sort();
+
+console.log(clen);
+console.log(csort);
+
+let flag1 = Array.isArray(charr)
+console.log(flag1);
+
+console.log(charr instanceof Array);
+
+
+
+
 
 
 

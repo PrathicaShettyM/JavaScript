@@ -27,6 +27,20 @@
 
     <div id="headTag"></div>
 
+    // displaying array elements by looping
+
+    <h2>JavaScript Array</h2>
+
+    <p>Display fruits</p>
+    <div id="displayFruits"></div>
+
+    <p>Display Cricketers</p>
+    <div id="cricket"></div>
+
+    <p>Display fruits using Array.forEach()</p>
+    <div id="Feach"></div>
+
+
 
 
 
@@ -49,6 +63,43 @@
        function showDate(){
         document.getElementById("event2").innerHTML = Date();
        }
+
+       // Diplay fruits name
+       const fruits = ["apple", "mango", "banana", "strawberry"]
+       fruits.push("Mango")
+       let arLen = fruits.length;
+
+       let text = "<ul>"
+       for(let i = 0; i < arLen; i++){
+        text += "<li>" + fruits[i] + "</li>";
+       } 
+       text += "</ul>"
+
+       document.getElementById("displayFruits").innerHTML = text
+
+       // Display a cricketer array
+
+        const arr2 = ["Virat", "Rohit", "MSDhoni", "ABdeVilliars"]
+        const aLen = arr2.length;
+        let content = "<ul>"
+        for(let i = 0; i < aLen; i++){
+            content += "<li>"+ arr2[i] +"</li>"
+        }
+        content += "</ul>"
+        document.getElementById("cricket").innerHTML = content
+
+        // display fruit array using for each method
+
+        let content2 = "<ul>"
+            fruits.forEach(myFunc);
+            content2 += "</ul>"
+
+            function myFunc(fruitArr){
+                content2 += "<li>" + fruitArr + "</li>"
+            }
+
+            document.getElementById("Feach").innerHTML = content2
+
 
 
 
