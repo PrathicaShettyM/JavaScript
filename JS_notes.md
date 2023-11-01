@@ -18,7 +18,7 @@ note:
 3. const (block scope)
 4. var (for old browsers) (golbal scope, can be redeclared also)
 
-## js arithmetic
+## JS arithmetic
 * note:
 ```
 const x = 3 + 5 + volvo = 8volvo
@@ -157,6 +157,42 @@ note :
 -  HOW TO check if the given object is array or not? use the methods
 1. Array.isArray(`arrayname`)
 2. `arrayname` instanceof Array 
+
+## More Array methods
+
+1. arr.toString() : convert to string from array form
+
+2. arr.pop() : remove last element of the array
+
+3. arr.push("new-element") : add element at the last to the array
+
+4. arr.shift() : remove 1st element of the array
+
+5. arr.unshift("new-element") : add element to the start of array
+
+6. arr.join(" - ") : join using the given separator(here '-')
+
+7. arr.delete() : deletes element but leaves undefined holes in the array, so use only pop or shift
+
+8. arr1.concat(arr2) : const 2 arrays
+* to concat multiple arrays => arr1.concat(arr2, arr3)
+
+9. arr.flat() : `[[1,2], [3,4], [5,6]]` => concats multiple substrings into a single array
+
+10. `arr.splice(2,0,"lemon", "kiwi")` : add new elements to array
+* 2 : index where new elements shd be added
+* 0 : no. of elements u want it to be deleted
+* `"lemon", "kiwi"` : new items to be added in the array
+
+* case 2 : remove "1" element at the index "0" 
+useful method to remove elements without leaving any "holes" in the array
+```
+const numArr2 = [9,8,7,2]
+numArr2.splice(0,1)
+```
+
+11. i) arr.slice(2) : remove element at 2nd index
+    ii) arr.slice(1,3) : remove element from "0" to "3-1" index
 
 
 

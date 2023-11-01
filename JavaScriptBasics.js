@@ -175,6 +175,46 @@ console.log(flag1);
 
 console.log(charr instanceof Array);
 
+// Some more array methods
+
+const fruits = ["orange", "mango", "banana", "apple"]
+
+console.log(fruits.toString());
+
+console.log(fruits.join(" ~ "));
+
+fruits.pop()
+console.log(fruits);
+
+fruits.push("strawberry")
+console.log(fruits);
+
+fruits.shift();
+console.log(fruits);
+
+fruits.unshift("pomogranate")
+console.log(fruits);
+
+console.log(fruits[2]);
+
+const veggies = ["carrot", "beans", "potato"]
+console.log(fruits.concat(veggies));
+
+const arr4 = [[1,2], [3,4], [5,6]]
+const newArr = arr4.flat()
+console.log(newArr);
+
+const numArr = [3,4,5,6]
+numArr.splice(2,0, "Lemon", "Kiwi")
+console.log(numArr);
+
+const numArr2 = [9,8,7,2]
+numArr2.splice(0,1)
+console.log(numArr2);
+
+const numArr3 = ["batman", "spiderman", "ironman"]
+console.log(numArr3.slice(1));
+
 
 
 
