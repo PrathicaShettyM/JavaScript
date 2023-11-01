@@ -200,6 +200,58 @@ NOTE : sorting in case of stringified arrays gives wrong results like "2" can co
  points.sort(function(a, b){return a - b})
 ```
  
+ ### Array iteration methods
+ 1. map() : create new arr by performing a function on each element
+ - `arr.map(callbackfunction)`
+ ```
+    const arr = [1,4,2,3,7];
+    const res = arr.map(func)
+
+    // func is call back function
+
+    function func(arrEle){
+        return arrEle*2
+    }
+    console.log(res);
+ ```
+2. filter() : filters out element based on condition
+- `arr.filter(callbackfunction)`
+```
+const arr2 = [12,34,56,17]
+const res2 = arr2.filter(check)
+
+function check(val){
+    return val>18
+}
+console.log(res2);
+```
+
+3. every() : same as filter
+4. some() : same as filter
+5. find() : same as filter
+
+6. reduce() : reduce each element to produce a single value
+* accepts 2 parameters
+- `arr.reduce(callback)`
+```
+const arr3 = [23,45,76,90]
+let sum = arr3.reduce(add)
+
+function add(total, val){
+    return total + val;
+}
+console.log(sum);
+```
+7. indexOf() : returns the index of specified array element
+- `arr.indexOf("arrElement")` or
+- `array.indexOf(item, start)`
+
+```
+const players = ["Virat", "Rohit", "Jadeja", "Pandya", "Rahul"]
+let idx = players.indexOf("Pandya")
+console.log(idx);
+```
+8. lastIndexOf() : same as indexOf() but returns last occurence of the specified element
 
 
 
