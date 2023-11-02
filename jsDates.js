@@ -52,6 +52,29 @@ let ms = Date.now();
 console.log(ms/(1000*60*60*24*365));
 // division is for getting the no of years
 
+// Set Date methods
+const sd = new Date()
+console.log(sd.setDate());
+setFullYear()  
+setHours() 
+setMinutes()  
+setMilliseconds() 
+setMonth()  
+setSeconds() 
+setTime()  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

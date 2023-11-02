@@ -363,7 +363,15 @@ Output:
 ```
 1698910136457(time in milli seconds)
 ```
-8. getFullYear() : 
+### Set date methods
+1. setDate() : 
+2. setFullYear() : 
+3. setHours() : 
+4. setMinutes() : 
+5. setMilliseconds() : 
+6. setMonth() : 
+7. setSeconds() : 
+8. setTime() : 
 
 
 
