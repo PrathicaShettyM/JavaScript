@@ -158,6 +158,37 @@ console.log(Number("23"));
 
 console.log(parseInt(" 102 3")); 
 
+// JavaScript Math objects
+console.log("\nJavaScript Math objects : ");
+console.log("PI : " + Math.PI);
+console.log("Euler's no : " + Math.E);
+console.log("Square root of 25 : " + Math.sqrt(25));
+console.log("square toot of 2 : " + Math.SQRT1_2);
+console.log("square root of 1/2 : " + Math.SQRT2);
+console.log("natural log of 2 : " + Math.LN2);
+console.log("natural log of 10 : " + Math.LN10);
+console.log("base 2 log of e : " + Math.LOG2E);
+console.log("base 10 log of e : " + Math.LOG10E);
+
+console.log("Round : " + Math.round(88.7531));
+console.log("Ceil : " + Math.ceil(90.7654));
+console.log("Floor : " + Math.floor(23.6754));
+console.log("Trunc : " + Math.trunc(2345.712));
+
+console.log("Sign : " + Math.sign(-4));
+console.log("Sign : " + Math.sign(0));
+console.log("Sign : " + Math.sign(4));
+
+console.log("Power of : " + Math.pow(8,3));
+console.log("Absolute : " + Math.abs(-4.7));
+console.log("Sin(45) : " + Math.sin(45*Math.PI/180)); // for degrees
+console.log("Cos(45) : " + Math.cos(30*Math.PI/180)); // for degrees
+console.log("Min function : " + Math.min(0, 150, 20, 37, -8, -2, -10));
+console.log("Max function : " + Math.max(0, 150, 20, 37, -8, -2, -10));
+console.log("Random number : " + Math.random());
+console.log("Log : " + Math.log(3));
+console.log("Log2 : " + Math.log2(3));
+console.log("Log10 : " + Math.log10(3));
 
 
 

@@ -54,14 +54,36 @@ console.log(ms/(1000*60*60*24*365));
 
 // Set Date methods
 const sd = new Date()
-console.log(sd.setDate());
-setFullYear()  
-setHours() 
-setMinutes()  
-setMilliseconds() 
-setMonth()  
-setSeconds() 
-setTime()  
+console.log("Set year : " + sd.setFullYear(2020));
+console.log("Set year : " + sd.setFullYear(2020,11,2));
+
+console.log("Set Month : " + sd.setMonth(11));
+
+console.log("Set date : " + sd.setDate(15) + 13);
+
+console.log("Set hour : " + sd.setHours(22)); 
+
+console.log("Set Minutes : " + sd.setMinutes(30));
+
+console.log("Set milliSeconds" + sd.setMilliseconds(30)); 
+
+console.log("Set Seconds : " + sd.setSeconds(30)); 
+
+console.log("Set Time : " + sd.setTime(12,12,30)); 
+
+// comparing dates
+let text = "";
+const today = new Date();
+const someDay = new Date();
+someDay.setFullYear(2100,0,14);
+if(someDay > today){
+    text = "Today is before Jan 14, 2100"
+}else{
+    text = "Today is after Jan 14, 2100"
+}
+console.log(text);
+
+
 
 
 

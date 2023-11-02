@@ -364,16 +364,97 @@ Output:
 1698910136457(time in milli seconds)
 ```
 ### Set date methods
-1. setDate() : 
-2. setFullYear() : 
-3. setHours() : 
-4. setMinutes() : 
-5. setMilliseconds() : 
-6. setMonth() : 
-7. setSeconds() : 
-8. setTime() : 
 
+1. setDate() : set date
+2. setFullYear() : set full year
+3. setHours() : set hr
+4. setMinutes() : set min
+5. setMilliseconds() : set m sec
+6. setMonth() : set month
+7. setSeconds() : set sec
+8. setTime() : set time
 
+```
+const sd = new Date()
+console.log("Set year : " + sd.setFullYear(2020));
+console.log("Set year : " + sd.setFullYear(2020,11,2));
+
+console.log("Set Month : " + sd.setMonth(11));
+
+console.log("Set date : " + sd.setDate(15) + 13);
+
+console.log("Set hour : " + sd.setHours(22)); 
+
+console.log("Set Minutes : " + sd.setMinutes(30));
+
+console.log("Set milliSeconds" + sd.setMilliseconds(30)); 
+
+console.log("Set Seconds : " + sd.setSeconds(30)); 
+
+console.log("Set Time : " + sd.setTime(12,12,30)); 
+```
+## Math objects
+
+1. Math  objects are static
+2. Math.E : returns Euler's number
+3. Math.PI : PI = 3.14
+4. Math.SQRT2 = square root of 2
+5. Math.SQRT1_2 = square root of 1/2
+6. Math.LN2 = natural logarithm of 2
+7. Math.LN10 = natural logarithm of 10
+8. Math.LOG2E = base 2 logarithm of E
+9. Math.LOG10E = base 10 logarithm of E
+```
+console.log("\nJavaScript Math objects : ");
+console.log("PI : " + Math.PI);
+console.log("Euler's no : " + Math.E);
+console.log("Square root of 25 : " + Math.sqrt(25));
+console.log("square toot of 2 : " + Math.SQRT1_2);
+console.log("square root of 1/2 : " + Math.SQRT2);
+console.log("natural log of 2 : " + Math.LN2);
+console.log("natural log of 10 : " + Math.LN10);
+console.log("base 2 log of e : " + Math.LOG2E);
+console.log("base 10 log of e : " + Math.LOG10E);
+console.log(" : ");
+```
+10. Math.round(x) :  x rounded to its nearest integer
+11. Math.ceil(x) :  x rounded up to its nearest integer
+12. Math.floor(x) :  x rounded down to its nearest integer
+13. Math.trunc(x) :  the integer part of x
+14. Math.sign(x) : if x+ve = 1, x = 0, x-ve = -1
+```
+console.log("Round : " + Math.round(88.7531));
+console.log("Ceil : " + Math.ceil(90.7654));
+console.log("Floor : " + Math.floor(23.6754));
+console.log("Trunc : " + Math.trunc(2345.712));
+
+console.log("Sign : " + Math.sign(-4));
+console.log("Sign : " + Math.sign(0));
+console.log("Sign : " + Math.sign(4));
+```
+#Note : Math.log(x) and Math.E are twins
+15. Math.pow(8,3) : 8 raised to power 3
+16. Math.abs(-4.7) : absolute value of the given number
+17. Math.sin(45*Math.PI/180) : for sin45 in degrees
+18. Math.cos(30*Math.PI/180) : for cos30 in degrees
+19. Math.min(0, 150, 20, 37, -8, -2, -10)
+20. Math.max(0, 150, 20, 37, -8, -2, -10)
+21. Math.random() : generates a random btw 0 and 1
+22. Math.log(3) : log 
+23. Math.log2(3): log2
+24. Math.log10(3): log10
+```
+console.log("Power of : " + Math.pow(8,3));
+console.log("Absolute : " + Math.abs(-4.7));
+console.log("Sin(45) : " + Math.sin(45*Math.PI/180)); // for degrees
+console.log("Cos(45) : " + Math.cos(30*Math.PI/180)); // for degrees
+console.log("Min function : " + Math.min(0, 150, 20, 37, -8, -2, -10));
+console.log("Max function : " + Math.max(0, 150, 20, 37, -8, -2, -10));
+console.log("Random number : " + Math.random());
+console.log("Log : " + Math.log(3));
+console.log("Log2 : " + Math.log2(3));
+console.log("Log10 : " + Math.log10(3));
+```
 
 
 
