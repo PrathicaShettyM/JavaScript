@@ -274,7 +274,96 @@ output:
 11. spread(...) operator : concats 2 arrays
 `const res = [...arr1, ...arr2]`
 
+## JavaScript Dates
+```
+const date = new Date(year, month, date, hour, minute, second)
+```
+1. date-element.toString() : creates date into readable format
+```
 
+console.log(d.toString());
+
+output => Thu Nov 02 2023 10:36:00 GMT+0530 (India Standard Time)
+```
+2. we can also get ISO and UTC standard dates by following the below syntax
+`console.log(d.toISOString());
+console.log(d.toUTCString());`
+
+### Date methods
+
+* note : JavaScript returns date based on zero index ("0" => January)
+
+1. date.getFullYear() : diplay only year
+```
+const date = new Date("2023-11-02")
+console.log("Year : " + date.getFullYear()); 
+```
+Output:
+```
+2023
+```
+2. date.getMonth() : display month in form of zero based index
+```
+const date = new Date("2023-11-02")
+console.log("Month : " + date.getMonth()); 
+```
+Output:
+```
+10 (because of '0' based indexing)
+```
+*  to display month in the form of string, create full string array 
+```
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+const date = new Date();
+
+let month = months[date.getMonth()]
+console.log("Month is : " + mon);
+```
+3. getDate() : get date from the input string
+```
+const date = new Date("2023-11-02)
+console.log("Date : " + date.getDate()); 
+```
+4. `getHours(), getMinutes(), getSeconds(), getMilliseconds()` : to get hours(0-23), minutes(0-59), seconds(0-59), milliseconds(0-999)
+```
+console.log("Hours : " + date.getHours()); 
+console.log("Minutes : " + date.getMinutes()); 
+console.log("Seconds : " + date.getSeconds()); 
+```
+5. getDay() : returns weekday(0-6)
+```
+console.log("Day : " + date.getDay());
+```
+-> To get day as a string 
+```
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const day = new Date("2023-11-02")
+let daybe = days[day.getDay()]
+console.log(daybe);
+```
+
+
+6. getTime() : return time 
+```
+const t = new Date("2023-11-02")
+console.log("Time : " + t);
+```
+Output:
+```
+Time : Thu Nov 02 2023 05:30:00 GMT+0530 (India Standard Time)
+```
+
+7. Date.now() : returns the no. of milliseconds since jan 1, 1970
+```
+let ms = Date.now();
+console.log(ms);
+```
+Output:
+```
+1698910136457(time in milli seconds)
+```
+8. getFullYear() : 
 
 
 
