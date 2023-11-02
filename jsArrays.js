@@ -88,9 +88,25 @@ function add(total, val){
 console.log(sum);
 
 //indexof
-const players = ["Virat", "Rohit", "Jadeja", "Pandya", "Rahul"]
+const players = ["Virat", "Rohit", "Jadeja", "Pandya"]
 let idx = players.indexOf("Pandya")
 console.log(idx);
+
+//entries
+const arr5 = ["apple","banana","mango","orange"]
+const res3 = fruits.entries();
+for(let x of res3){
+    console.log(x);
+}
+console.log(arr5.includes("mango"));
+
+const favouriteFruits = [...players,...arr5]
+console.log(favouriteFruits);
+
+
+
+
+
 
 
 

@@ -253,6 +253,26 @@ console.log(idx);
 ```
 8. lastIndexOf() : same as indexOf() but returns last occurence of the specified element
 
+9. entries() : returns new arrays which have indexs and array elements as shown below
+```
+const arr5 = ["apple","banana","mango","orange"]
+const res3 = fruits.entries();
+for(let x of res3){
+    console.log(x);
+}
+```
+output:
+```
+[ 0, 'pomogranate' ]
+[ 1, 'mango' ]
+[ 2, 'banana' ]
+[ 3, 'strawberry' ]
+```
+10. includes(): tells if the given element is present the array
+`arr.includes("array elements")`
+
+11. spread(...) operator : concats 2 arrays
+`const res = [...arr1, ...arr2]`
 
 
 
