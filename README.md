@@ -1,5 +1,5 @@
 # JavaScript-deep-dive
-This repository contains basic to advance JavaScript concepts.
+This repository contains basic to advance JavaScript concepts in the form of Notes and code execution
 
 1. JavaScript basics
 2. JavaScripts conditionals and loops
