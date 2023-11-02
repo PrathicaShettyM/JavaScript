@@ -468,11 +468,73 @@ console.log("Random no. between 0 and 10(absolute) : " + Math.floor(Math.random(
 console.log("Random no. between 1 and 10(absolute) : " + (Math.floor(Math.random() * 10) + 1));
 ```
 
+** Nullish Coalasing operator : `let res = null??"string"` returns 1st arg if it is not null, returns second it it is null
 
+* `switch cases` use `strict comparision`
 
+* `For in loops` iterates through props of `objects` or elements of `array`
 
+## JavaScript sets
+They store collection of unique values
+1. create new set
+```
+   const letters = new Set(["a","b","c"])
+   console.log(letters);
+```
+2. add() : to add set elements
+```
+const vowels = new Set();
+vowels.add("a")
+vowels.add("e")
+vowels.add("i")
+vowels.add("o")
+vowels.add("u")
+console.log(vowels); 
+```
+3. values() : returns iterator object containing all values in the set
+```
+const val = vowels.values()
+console.log(val);
+```
+### JavaScript Maps
+holds data in the form of key value pairs
+1. Creating a map
+```
+const fruits = new Map([
+    ["apples", 500],
+    ["bananas", 200],
+    ["oranges",300]
+])
+console.log(fruits);
+```
+output:
+```
+Map(3) { 'apples' => 500, 'bananas' => 200, 'oranges' => 300 }
+```
 
+2. set() : to add new entries to the map
+```
+fruits.set("mangos", 400)
+fruits.set("pomogranate",100)
+console.log(fruits);
+```
+3. get("entry-name") : get a particular element from the map
+```
+let a = fruits.get("apples")
+console.log(a);
+```
+4. size : gives the no. of map elements
+```
+let len = fruits.size
+console.log(len);
+```
+5. delete("entry-name") : delete that particular element
+```
+fruits.delete("apples")
+```
+6. fruits.has("mangoes") : finds if the element is present in the map or not
 
+7. 
 
 
 

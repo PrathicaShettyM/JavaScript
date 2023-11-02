@@ -194,8 +194,33 @@ console.log("Random no. between 0 and 10(decimal) : " + Math.random() * 10);
 console.log("Random no. between 0 and 10(absolute) : " + Math.floor(Math.random() * 10));
 console.log("Random no. between 1 and 10(absolute) : " + (Math.floor(Math.random() * 10) + 1));
 
+// for in loop{objects}
 
+const obj = {fname:"Virat", lname:"Kohli", age:35}
+let text = ""
+for(let x in obj){
+    text += obj[x] + " ";
+}
+console.log(text);
 
+// for in loops[array]
+
+const arr = [1,2,3,4,5,10]
+let sumOEven = 0;
+for(let x in arr){
+    if(arr[x]%2==0){
+        sumOEven += arr[x];
+    } 
+}
+console.log(sumOEven);
+
+// for of loop[array]
+const arr2 = ["batman","superman","spiderman"]
+let heros = "";
+for(let x of arr2){
+  heros += x + " ";
+}
+console.log(heros);
 
 
 
