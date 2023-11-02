@@ -455,7 +455,18 @@ console.log("Log : " + Math.log(3));
 console.log("Log2 : " + Math.log2(3));
 console.log("Log10 : " + Math.log10(3));
 ```
-
+* note : random no between 0 and 10 and simliar pattern continues(decimal)
+```
+Math.random()*10
+```
+* note : random no btw 0 and 10 (absolute)
+```
+console.log("Random no. between 0 and 10(absolute) : " + Math.floor(Math.random() * 10));
+```
+* note : random no btw 1 and 10 (absolute)
+```
+console.log("Random no. between 1 and 10(absolute) : " + (Math.floor(Math.random() * 10) + 1));
+```
 
 
 

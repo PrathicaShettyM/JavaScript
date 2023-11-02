@@ -190,6 +190,10 @@ console.log("Log : " + Math.log(3));
 console.log("Log2 : " + Math.log2(3));
 console.log("Log10 : " + Math.log10(3));
 
+console.log("Random no. between 0 and 10(decimal) : " + Math.random() * 10);
+console.log("Random no. between 0 and 10(absolute) : " + Math.floor(Math.random() * 10));
+console.log("Random no. between 1 and 10(absolute) : " + (Math.floor(Math.random() * 10) + 1));
+
 
 
 
