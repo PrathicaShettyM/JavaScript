@@ -534,9 +534,26 @@ fruits.delete("apples")
 ```
 6. fruits.has("mangoes") : finds if the element is present in the map or not
 
-7. 
+## JSON
+1. convert string to js object
+    const obj = JSON.parse(text);
 
+    let text = '{ "employees" : [' +
+    '{ "firstName":"John" , "lastName":"Doe" },' +
+    '{ "firstName":"Anna" , "lastName":"Smith" },' +
+    '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
 
+### Regex 
+sequence of characters forming a search pattern
+1. search() : returns the location of 1st letter of the word(here Whatsapp)
+```
+let data = "Hi there I'm using Whatsapp"
+let n = data.search("Whatsapp")
+console.log(n);
+```
+
+Note : if u use a variable that is not declared then it has global scope
+`carName = "Volvo"` ha global scope
 
 
 
