@@ -555,8 +555,42 @@ console.log(n);
 Note : if u use a variable that is not declared then it has global scope
 `carName = "Volvo"` ha global scope
 
-
-
+### JavaScript Functions
+1. Arrow functions:
+```
+let hello = (a,b)=>{
+    return a*b;
+}
+console.log(hello(2,3));
+```
+### JavaScript Classes
+1. Creating a class
+```
+class Car{
+    constructor(name, year){
+        this.name = name;
+        this.year = year;
+    }
+}
+const Car1 = new Car("Audi R8", 2020)
+const Car2 = new Car("Bugati Veron", 2019)
+console.log(Car1);
+console.log(Car2);
+```
+1. Creating methods and accessing them
+```
+class Car{
+    constructor(name, year){
+        this.name = name;
+        this.year = year;
+    }
+    myNewCar =()=>{
+        console.log(`My new car is ${this.name} which I purchased in ${this.year}`);    
+    }
+}
+const Car1 = new Car("Audi R8", 2020)
+console.log(Car1.myNewCar());
+```
 
 
 
