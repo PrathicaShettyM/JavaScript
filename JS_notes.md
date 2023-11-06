@@ -591,7 +591,9 @@ class Car{
 const Car1 = new Car("Audi R8", 2020)
 console.log(Car1.myNewCar());
 ```
-
+## Object properties
+1. object.propert
+2. object[property]
 
 
 
