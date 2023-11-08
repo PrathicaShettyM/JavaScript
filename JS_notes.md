@@ -592,9 +592,76 @@ const Car1 = new Car("Audi R8", 2020)
 console.log(Car1.myNewCar());
 ```
 ## Object properties
-1. object.propert
+1. object.property
 2. object[property]
+3. "deleting object prop" : `delete object.prop`
+(deletes both object prop and prop value also)
+4. nested objects
+```
+console.log("\nNested objects : ");
+obj4 = {
+    fname: "Prathica",
+    lname: "Shetty",
+    skills: {
+        s1 : "JavaScript",
+        s2 : "Java",
+        s3 : "Python",
+        s4 : "C++"
+    }
+}
+console.log(obj4.skills.s2);
 
+```
+- accessing nested objects may be : 
+* obj4["skills"]["s2"]
+* obj4.skills["s2"]
+
+5. Nested Objects and arrays
+```
+const obj5 = {
+    name : "Ninja",
+    cars : [
+        {brand : "Audi", price : "29000"},
+        {brand : "BMW", price : "35000"},
+    ]
+}
+console.log("display contents : ");
+let txt2 = ""
+let txt3 = ""
+for(let i in obj5.cars){
+    txt2 += obj5.cars[i].brand + " "
+        for(let j in obj5.cars[i].price){
+            txt3 += obj5.cars[i].price[j] 
+        }
+}
+console.log(txt2);
+console.log(txt3);
+```
+
+## `this` keyword
+* `this` refers to an `object`.
+* `this` keyword refers to `different` objects depending on how it is used:
+1. In an `object method` => this refers to the `object`.
+2. `Alone` => this refers to the `global object`.
+3. In a `function` => this refers to the `global object`.
+4. In a `function, in strict mode` => this is `undefined`.
+5. In an `event` => this refers to the `element that received the event.`
+6. `call(), apply(), bind()` : can refer this to any object.
+
+## Accessing object methods
+* NOTE
+1. `objName.functionName()` : executes the function and returns the required value
+2. `objName.functionName` : gives the function code(function definition)
+3. using built in functions
+```
+console.log(objectName.FuncName().toUpperCase());
+```
+
+## display JavaScript objects
+1. display by Objname
+2. display ObjName in a loop
+3. display objName using `Object.values()`
+4. display objname using `JSON.stringify()`
 
 
 
