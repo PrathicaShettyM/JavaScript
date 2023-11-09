@@ -86,6 +86,38 @@ let msg = "hello javascript"
 let x1 = msg.toUpperCase()
 console.log(x1);
 
+let displayObj = Object.values(person)
+console.log(displayObj);
+
+let displayObj2 = JSON.stringify(person)
+console.log(displayObj2);
+
+// getter
+const p1 = {
+    firstName : "Virat",
+    lastName : "Kohli",
+    language : "Hindi",
+    get lang(){
+        return this.language
+    }
+
+}
+console.log(p1.lang);
+
+// setter
+const p2 = {
+    firstName : "Virat",
+    lastName : "Kohli",
+    language : "Hindi",
+    style : "",
+    set battingStyle(sty){
+        return this.style = sty
+    }
+}
+p2.battingStyle = "right"
+console.log(p2.lang);
+
+
 
 
 

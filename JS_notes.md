@@ -660,8 +660,13 @@ console.log(objectName.FuncName().toUpperCase());
 ## display JavaScript objects
 1. display by Objname
 2. display ObjName in a loop
-3. display objName using `Object.values()`
-4. display objname using `JSON.stringify()`
+3. display objName using `Object.values()` : display in the form of array
+4. display objname using `JSON.stringify()` : display in the form of stringified json object
+
+
+## Getters and setters
+
+
 
 
 
