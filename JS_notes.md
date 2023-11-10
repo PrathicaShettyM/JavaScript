@@ -569,6 +569,26 @@ console.log(hello(2,3));
 Note : they can't be hoisted(means they can be accessed before function def)
 
 3. Self-invoking function
+```
+(function(){
+    console.log("Hello Self invoking function"); 
+})()
+
+```
+
+4. `function rest parameter` : used to perform operation on any number ( or infinite) of arguements
+```
+function sum(...args){
+    let sum = 0;
+    for(let arg of args) sum+= arg
+    return sum
+}
+console.log(sum(1,2,3,4,5,6,7,8,9,11));
+```
+Note:
+* `Arguemnts are passed by value` and `Objects are passed by reference`
+* call() and apply() and bind()
+* local and global variables can have same name but refer to different stuff
 
 
 
@@ -613,6 +633,44 @@ class Car{
 const Car1 = new Car("Audi R8", 2020)
 console.log(Car1.myNewCar());
 ```
+
+2. Inheritance in class : use `extends` keyword
+```
+class Model "extends" Car{
+    // code
+}
+```
+```
+class Model extends Car{
+    constructor(name, mod){
+        super(name)
+        this.model = mod
+    }
+    show(){
+        return this.present() + "Car which is an " + this.model + " Model";
+    }
+}
+let Car1Description = new Model("Audi", "R8")
+console.log(Car1Description);
+console.log(Car1Description.show());
+```
+* super() : used to refer a method of parent class
+
+3. static class : defined only for class, cannot be an object method
+```
+class Greet{
+    constructor(name){
+        this.name = name;
+    }
+    static hello(){
+        return "hello"
+    }
+}
+const GoodMorning = new Greet("Good morning")
+// console.log(GoodMorning.hello()); = > gives an error
+console.log(Greet.hello());
+```
+
 ## Object properties
 1. object.property
 2. object[property]
