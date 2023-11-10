@@ -148,8 +148,73 @@ obj.add = 5;
 obj.subtract = 2;
 console.log(obj.counter);
 
+// object constructors
+// Person : is a constructor
+function Person(first, last, age){
+    this.fname = first;
+    this.lname = last;
+    this.age = age;
+}
+// create a person object
+const myself = new Person("Prathica", "Shetty", 19)
+console.log(myself);
+const myFriend = new Person("Rohit", "Sharma", 36)
+console.log(myFriend);
+myFriend.profession = "Cricketer"
+console.log(myFriend);
 
+// prototype objects
+function Human(race, age){
+    this.race = race;
+    this.age = age;
+}
+// function inherits race and age property
+Human.prototype.name = function(){
+    return this.race + " of age " + this.age
+}
+const Nigerian = new Human("African", 34)
+console.log(Nigerian);
+console.log("The person is an " + Nigerian.name());
 
+// map objects
+const fruits = new Map([
+    ["apples", 500],
+    ["bananas", 200],
+    ["oranges",300]
+])
+console.log(fruits);
+
+// mapping using set method set()
+const veggies = new Map()
+veggies.set("carrot", 400)
+veggies.set("beans", 300)
+veggies.set("potato", 600)
+console.log(veggies);
+
+// updation
+veggies.set("beans", 100)
+console.log(veggies);
+
+//get()
+console.log(veggies.get("carrot"));
+
+//size
+console.log(veggies.size);
+
+// delete()
+console.log(veggies.delete("carrot"));
+console.log(veggies);
+
+// has()
+console.log(veggies.has("beans"));
+
+//clear()
+veggies.clear()
+console.log(veggies);
+
+console.log(typeof(fruits));
+
+console.log(fruits instanceof Map);
 
 
 

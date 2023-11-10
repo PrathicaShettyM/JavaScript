@@ -496,6 +496,8 @@ console.log(vowels);
 const val = vowels.values()
 console.log(val);
 ```
+
+
 ### JavaScript Maps
 holds data in the form of key value pairs
 1. Creating a map
@@ -563,6 +565,26 @@ let hello = (a,b)=>{
 }
 console.log(hello(2,3));
 ```
+2. annonymous functions : functions without a name
+Note : they can't be hoisted(means they can be accessed before function def)
+
+3. Self-invoking function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### JavaScript Classes
 1. Creating a class
 ```
@@ -679,6 +701,34 @@ Object.defineProperty(obj, "increment", {
 obj.increment;
 
 console.log(obj.counter);
+```
+
+3. object constructors
+```
+function Person(first, last){
+    this.fname = first;
+    this.lname = last;
+}
+const myself = new Person("Prathica", "Shetty")
+console.log(myself);
+myFriend.profession = "Cricketer"
+console.log(myFriend);
+```
+
+4. prototype inheritance : inherit the properties of objects
+```
+function Human(race, age){
+    this.race = race;
+    this.age = age;
+}
+
+// function inherits race and age property
+
+Human.prototype.name = function(){
+    return this.race + " " + this.age
+}
+const Nigerian = new Human("African", 34)
+console.log(Nigerian);
 ```
 
 
