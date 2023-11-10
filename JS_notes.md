@@ -665,7 +665,21 @@ console.log(objectName.FuncName().toUpperCase());
 
 
 ## Getters and setters
+1. to make code simpler and secure data we use getters and setters
+2. Object.defineProperty() : used to add getters and setters one by one
+```
+const obj = {counter : 0}
 
+Object.defineProperty(obj, "increment", {
+    get: function(){
+        this.counter++
+    }
+})
+
+obj.increment;
+
+console.log(obj.counter);
+```
 
 
 

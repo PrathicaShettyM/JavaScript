@@ -115,7 +115,59 @@ const p2 = {
     }
 }
 p2.battingStyle = "right"
-console.log(p2.lang);
+console.log(p2.style);
+
+// Object.defineProperty() : used to add getters and setters
+// counter example
+const obj = {counter : 0}
+
+Object.defineProperty(obj, "reset", {
+    get: function(){
+        this.counter = 0
+    }
+})
+Object.defineProperty(obj, "increment", {
+    get: function(){
+        this.counter++
+    }
+})
+Object.defineProperty(obj, "add", {
+    set: function(value){
+        this.counter+=value
+    }
+})
+Object.defineProperty(obj, "subtract", {
+    set: function(value){
+        this.counter-=value
+    }
+})
+
+obj.reset;
+obj.increment;
+obj.add = 5;
+obj.subtract = 2;
+console.log(obj.counter);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
