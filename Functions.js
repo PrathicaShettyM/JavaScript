@@ -51,3 +51,6 @@ class Greet{
 const GoodMorning = new Greet("Good morning")
 // console.log(GoodMorning.hello()); = > gives an error
 console.log(Greet.hello());
+
+// call back functions
+

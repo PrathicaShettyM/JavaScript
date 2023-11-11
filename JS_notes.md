@@ -788,9 +788,14 @@ Human.prototype.name = function(){
 const Nigerian = new Human("African", 34)
 console.log(Nigerian);
 ```
+## JavaScript Async 
+1. `Callbacks` : it is a function passed as an arguement to another function
 
+## JSON
+1. `JSON.parse({json data})` : used to convert json format data into JS Object
+* it can also parse a json array into js array 
 
-
+2. `JSON.stringify()` : used to convert JS Object into a string
 
 
 
