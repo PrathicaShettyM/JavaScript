@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM</title>
+    <link rel="stylesheet" href="./JS_DOM.css">
+</head>
+<body>
+    <h1 id="c">This is JavaScript DOM Tutorial</h1>
+    <p id="demo"></p>
+
+    <img src="#" alt="image" id="image">
+
+    <p id="date"></p>
+
+    <form id="form" onsubmit="return validateForm()">
+        <h2>Form Validation</h2>
+        <label>Name : <input type="text" id="name"></label><br>
+        <label>Email : <input type="email" id="email"></label><br>
+        <label>Password : <input type="password" id="password"></label><br>
+        <label>Phone no : <input type="text" id="phone"></label><br><br> 
+        <button id="btn">Submit</button>
+    </form>
+
+
+
+    <script>
+        document.getElementById("c").style.color = "red"
+        document.getElementById("demo").innerHTML = "Hello browser"
+        
+        document.getElementById("image").src = "someLink.jpg"
+        
+        document.getElementById("date").innerHTML = "Date : " + Date();
+    
+        //form validation
+        const len = document.getElementById("password").innerText.length
+        function validateForm(){
+            let name = document.forms["form"]["name"].value;
+            if(name == ""){
+                alert("Name is required")
+                return false;
+            }
+            if(len <= 6){
+                alert("Password should be minimum of 6 characters")
+            }
+
+        }
+    
+    
+    
+    
+    
+    
+    
+    </script>
+
+</body>
+</html>

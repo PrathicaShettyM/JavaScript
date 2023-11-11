@@ -797,5 +797,17 @@ console.log(Nigerian);
 
 2. `JSON.stringify()` : used to convert JS Object into a string
 
+## JavaScript DOM
+1. document.getElementById("idname")
+2. document.getElementByTagName("tagname")
+3. document.getElementByClassName("classname")
+4. document.querySelectorAll("p.className")
+
+
+1. `document.getElementById("idname").innerHTML = "somecontent"`: to display the content on the webpage
+2. `document.getElementById("image").src = "someLink.jpg"`: to change the attribute of an html element
+
+
+
 
 
