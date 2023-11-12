@@ -806,6 +806,54 @@ console.log(Nigerian);
 
 1. `document.getElementById("idname").innerHTML = "somecontent"`: to display the content on the webpage
 2. `document.getElementById("image").src = "someLink.jpg"`: to change the attribute of an html element
+3. document.getElementById("image").addEventListener("click", function)
+.value
+.length
+.toUpperCase()
+
+1. Creating HTML elements
+- html code
+```
+  <div id="div2">
+        <p id="p3">This is another example</p>
+    </div>
+```
+- js code
+```
+ const h1 = document.createElement("h1")
+        const content = document.createTextNode("I created this h1 tag from javascript")
+        h1.appendChild(content)
+
+        const target = document.getElementById("div2")
+        target.appendChild(h1)
+```
+`note` : appendChild() is used to add an element at the end, to insert an element in the beginning use `element.insertBefore(para,child)`
+- child nodes and other elements can also be removed
+- elements can also be replaced
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
