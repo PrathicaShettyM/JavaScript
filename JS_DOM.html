@@ -20,9 +20,27 @@
         <label>Email : <input type="email" id="email"></label><br>
         <label>Password : <input type="password" id="password"></label><br>
         <label>Phone no : <input type="text" id="phone"></label><br><br> 
-        <button id="btn">Submit</button>
+        <button id="btn" onmouseover="mOver(this)" onmouseout="mOut(this)">Submit</button>
     </form>
 
+    <h1>JavaScript HTML events</h1>
+    <h2 onclick="this.innerHTML = 'Oh You just clicked here!!'">Click on this text</h2>
+
+    <p>Click the button to know today's date and time</p>
+    <button onclick="displayDateNTime()">Date and Time</button>
+    <p id="display"></p>
+
+    <br><br>
+    <button id="greet">Click</button>
+    <p id="greets"></p>
+
+    <label>Enter you name : <input type="text" id="nam"></label>
+    <br><button onclick="capsName()">Display below</button>
+    <p id="upperName"></p>
+    <br><br>
+
+
+    <button id="bttn">Click to start event listener</button>
 
 
     <script>
@@ -30,7 +48,6 @@
         document.getElementById("demo").innerHTML = "Hello browser"
         
         document.getElementById("image").src = "someLink.jpg"
-        
         document.getElementById("date").innerHTML = "Date : " + Date();
     
         //form validation
@@ -41,18 +58,38 @@
                 alert("Name is required")
                 return false;
             }
-            if(len <= 6){
-                alert("Password should be minimum of 6 characters")
-            }
-
         }
     
+        // Date and time function
+        function displayDateNTime(){
+            document.getElementById("display").innerHTML = Date();
+        }
     
+        //greet function
+        document.getElementById("greet").onclick = Greet;
+
+        function Greet(){
+            document.getElementById("greets").innerHTML = "Good morning"
+        }
     
+        // display name below 
+        function capsName(){
+            const n = document.getElementById("nam");
+            n.value = n.value.toUpperCase()
+            document.getElementById("upperName").innerHTML = n.value
+        }
     
-    
-    
-    
+        // onmouseover
+        function mOver(obj){
+            obj.innerHTML = "Are you sure that you want to submit"
+        }
+        function mOut(obj){
+            obj.innerHTML = "Submit"
+        }
+        
+        // event listener
+
+        document.getElementById("bttn").addEventListener("click", func = ()=> alert("This is an example of event listener"))
     </script>
 
 </body>
